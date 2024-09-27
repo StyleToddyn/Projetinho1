@@ -1,16 +1,54 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
+<html>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mapinha</title>
-    <link rel="stylesheet" href="/Libs/v10.2.1-site/theme/ol.css">
-</head>
-<body>
-    <h1>Início do meu projetinho</h1>
-    <script src="main.js"></script>
-    <script src="/Libs/v10.2.1-site/main.js"></script>
-    
-    
-</body>
+    <title>Display a map</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v10.1.0/ol.css">
+    <script src="https://cdn.jsdelivr.net/npm/ol@v10.1.0/dist/ol.js"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      #map {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      const key = 'txovivgyMZFCIfAJ4Df1';
+
+      const attribution = new ol.control.Attribution({
+        collapsible: false,
+      });
+
+      const source = new ol.source.TileJSON({
+        url: `https://api.maptiler.com/maps/streets-v2/tiles.json?key=${key}`,
+        tileSize: 512,
+        crossOrigin: 'anonymous'
+      });
+
+      const map = new ol.Map({
+        layers: [
+          new ol.layer.Tile({
+            source: source
+          })
+        ],
+        controls: ol.control.defaults.defaults({attribution: false}).extend([attribution]),
+        target: 'map',
+        view: new ol.View({
+          constrainResolution: true,
+          center: ol.proj.fromLonLat([16.62662018, 49.2125578]),
+          zoom: 14
+        })
+      });
+    </script>
+  </body>
 </html>
