@@ -18,11 +18,62 @@
         bottom: 0;
         left: 0;
       }
+      .ol-popup {
+        position: absolute;
+        background-color: white;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+        padding: 15px;
+        border-radius: 10px;
+        border: 1px solid #cccccc;
+        bottom: 12px;
+        left: -50px;
+        min-width: 280px;
+      }
+      .ol-popup:after, .ol-popup:before {
+        top: 100%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+      }
+      .ol-popup:after {
+        border-top-color: white;
+        border-width: 10px;
+        left: 48px;
+        margin-left: -10px;
+      }
+      .ol-popup:before {
+        border-top-color: #cccccc;
+        border-width: 11px;
+        left: 48px;
+        margin-left: -11px;
+      }
+      .ol-popup-closer {
+        text-decoration: none;
+        position: absolute;
+        top: 2px;
+        right: 8px;
+      }
+      .ol-popup-closer:after {
+        content: "✖";
+      }
     </style>
   </head>
   <body>
-    <div id="map"></div>
-    <script>
+    <div id="map" class="map"></div>
+    <div id="popup" class="ol-popup">
+      <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+      <div id="popup-content"></div>
+    </div>
+
+    <script>  
+      
+
+
+      /* Importando o Mapa */
+
       const key = 'txovivgyMZFCIfAJ4Df1';
 
       const attribution = new ol.control.Attribution({
@@ -45,10 +96,64 @@
         target: 'map',
         view: new ol.View({
           constrainResolution: true,
-          center: ol.proj.fromLonLat([16.62662018, 49.2125578]),
-          zoom: 14
+          center: ol.proj.fromLonLat([-45,-17]),
+          zoom: 4
+        }),
+      });
+
+      /*Marcando área de um local*/
+
+      const layer = new ol.layer.Vector({
+        source: new ol.source.Vector({
+          url: `https://api.maptiler.com/data/906ada2b-3f7b-4dde-9895-38bf71b16171/features.json?key=txovivgyMZFCIfAJ4Df1`,
+          format: new ol.format.GeoJSON(),
+        }),
+        style: new ol.style.Style({
+          stroke: new ol.style.Stroke({
+            color: 'rgba(0, 136, 136, 0.8)',
+          }),
+          fill: new ol.style.Fill({
+            color: 'rgba(0, 136, 136, 0.8)',
+          }),
         })
       });
+      map.addLayer(layer);
+
+
+      /*
+      #Criando um marcador e definindo onde ele vai aparecer,
+      #Geometria e o estilo do marcador
+      */  
+      const marker = new ol.layer.Vector({
+        source: new ol.source.Vector({
+          features: [
+            new ol.Feature({
+              geometry: new ol.geom.Point(ol.proj.fromLonLat([-49.89,-15.1297])),
+            }), 
+            new ol.Feature({
+              geometry: new ol.geom.Point(ol.proj.fromLonLat([-49.2155, -18.4216]))
+            }),
+            new ol.Feature({
+              geometry: new ol.geom.Point(ol.proj.fromLonLat([-48.9534,-16.3287]))
+            })
+          ]
+        }),
+        style: new ol.style.Style({
+          image: new ol.style.Icon({
+            anchor: [0.5, 1],
+            crossOrigin: 'anonymous',
+            src: 'https://docs.maptiler.com/openlayers/examples/default-marker/marker-icon.png',
+          })
+        })
+      }); 
+
+      map.addLayer(marker);
+
+
+      
+
+
+
     </script>
   </body>
 </html>
