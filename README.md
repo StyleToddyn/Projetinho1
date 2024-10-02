@@ -30,6 +30,6 @@ Você precisará:
 * Brena e Victor - Open Layers https://openlayers.org/
     * AL
     * PA
-    * RN    
+    * RN
     * AC
     * GO
