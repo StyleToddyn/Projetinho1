@@ -13,7 +13,7 @@ import { location, coord, state, link, population  } from './Informações/Info.
 const local = new Feature({
   geometry: new Point(fromLonLat([-48.9524,-16.3305])),
   name: `
-  <img src=data/Goias.png width ="220">
+  <img  src=data/anapolis.png>
   <h3>${location.anapolis} </h3>
   <p> Longitude: ${coord.longAnapolis}
   <p> Latitude: ${coord.latAnapolis}
@@ -24,7 +24,7 @@ const local = new Feature({
 const local2 = new Feature({
   geometry: new Point(fromLonLat([-47.9372,-18.1721])),
   name: `
-  <img src=data/Goias.png width ="220">
+  <img  src=data/catalao.png>
   <h3>${location.catalao} </h3>
   <p> Longitude: ${coord.longCatalao}
   <p> Latitude: ${coord.latCatalao}
@@ -35,7 +35,7 @@ const local2 = new Feature({
 const local3 = new Feature({
   geometry: new Point(fromLonLat([-49.2643,-16.6864])),
   name: `
-  <img src=data/Goias.png width ="220">
+  <img  src=data/goiania.png>
   <h3>${location.goiania} </h3>
   <p> Longitude: ${coord.longGoiania}
   <p> Latitude: ${coord.latGoiania}
@@ -46,7 +46,7 @@ const local3 = new Feature({
 const local4 = new Feature({
   geometry: new Point(fromLonLat([-49.2464,-16.8181])),
   name: `
-  <img src=data/Goias.png width ="220">
+  <img  src=data/aparecidaDeGoiania.png>
   <h3>${location.aparecidaDeGoiania} </h3>
   <p> Longitude: ${coord.longAparecidaDeGoiania}
   <p> Latitude: ${coord.latAparecidaDeGoiania}
@@ -57,7 +57,7 @@ const local4 = new Feature({
 const local5 = new Feature({
   geometry: new Point(fromLonLat([-49.2885,-16.6517])),
   name: `
-  <img src=data/Goias.png width ="220">
+  <img  src=data/trindade.png>
   <h3>${location.trindade} </h3>
   <p> Longitude: ${coord.longTrindade}
   <p> Latitude: ${coord.latTrindade}
@@ -70,7 +70,7 @@ const local5 = new Feature({
 const local6 = new Feature({
   geometry: new Point(fromLonLat([-35.2110,-5.7945])),
   name: `
-  <img src=data/Rio_Grande_do_Norte.png width="220">
+  <img  src=data/natal.png>
   <p>
   <h3>${location.natal} </h3>
   <p> Longitude: ${coord.longNatal}
@@ -83,7 +83,7 @@ const local6 = new Feature({
 const local7 = new Feature({
   geometry: new Point(fromLonLat([-37.3480,-5.1894])),
   name: `
-  <img src=data/Rio_Grande_do_Norte.png width="220">
+  <img  src=data/mossoro.png>
   <h3>${location.mossoro} </h3>
   <p> Longitude: ${coord.longMossoro}
   <p> Latitude: ${coord.latMossoro}
@@ -94,7 +94,7 @@ const local7 = new Feature({
 const local8 = new Feature({
   geometry: new Point(fromLonLat([-35.0862,-6.2095])),
   name: `
-  <img src=data/Rio_Grande_do_Norte.png width="220">
+  <img  src=data/tibauDoSul.png>
   <h3>${location.tibauDoSul} </h3>
   <p> Longitude: ${coord.longTibauDoSul}
   <p> Latitude: ${coord.latTibauDoSul}
@@ -105,7 +105,7 @@ const local8 = new Feature({
 const local9 = new Feature({
   geometry: new Point(fromLonLat([-37.0980,-6.4532])),
   name: `
-  <img src=data/Rio_Grande_do_Norte.png width="220">
+  <img  src=data/caico.png>
   <h3>${location.caico} </h3>
   <p> Longitude: ${coord.longCaico}
   <p> Latitude: ${coord.latCaico}
@@ -116,7 +116,7 @@ const local9 = new Feature({
 const local10 = new Feature({
   geometry: new Point(fromLonLat([-36.5173,-6.3884])),
   name: `
-  <img src=data/Rio_Grande_do_Norte.png width="220">
+  <img  src=data/curraisNovos.png>
   <h3>${location.curraisNovos} </h3>
   <p> Longitude: ${coord.longCurraisNovos}
   <p> Latitude: ${coord.latCurraisNovos}
@@ -129,7 +129,7 @@ const local10 = new Feature({
 const local11 = new Feature({
   geometry: new Point(fromLonLat([-67.8249,-9.9754])),
   name: `
-  <img src=data/Bandeira_do_Acre.svg.png width="220">
+  <img  src=data/rioBranco.png>
   <h3>${location.rioBranco} </h3>
   <p> Longitude: ${coord.longRioBranco}
   <p> Latitude: ${coord.latRioBranco}
@@ -140,7 +140,7 @@ const local11 = new Feature({
 const local12 = new Feature({
   geometry: new Point(fromLonLat([-73.0165,-7.6339])),
   name: `
-  <img src=data/Bandeira_do_Acre.svg.png width="220">
+  <img  src=data/cruzeiroDoSul.png>
   <h3>${location.cruzeiroDoSul} </h3>
   <p> Longitude: ${coord.longCruzeiroDoSul}
   <p> Latitude: ${coord.latCruzeiroDoSul}
@@ -151,7 +151,7 @@ const local12 = new Feature({
 const local13 = new Feature({
   geometry: new Point(fromLonLat([-67.4580,-9.7161])),
   name: `
-  <img src=data/Bandeira_do_Acre.svg.png width="220">
+  <img  src=data/senadorGuiomard.png>
   <h3>${location.senadorGuiomard} </h3>
   <p> Longitude: ${coord.longSenadorGuiomard}
   <p> Latitude: ${coord.latSenadorGuiomard}
@@ -162,7 +162,7 @@ const local13 = new Feature({
 const local14 = new Feature({
   geometry: new Point(fromLonLat([-70.5903,-8.1480])),
   name: `
-  <img src=data/Bandeira_do_Acre.svg.png width="220">
+  <img  src=data/tarauaca.png>
   <h3>${location.tarauaca} </h3>
   <p> Longitude: ${coord.longTarauaca}
   <p> Latitude: ${coord.latTarauaca}
@@ -173,7 +173,7 @@ const local14 = new Feature({
 const local15 = new Feature({
   geometry: new Point(fromLonLat([-68.7584,-11.0680])),
   name: `
-  <img src=data/Bandeira_do_Acre.svg.png width="220">
+  <img  src=data/brasileia.png>
   <h3>${location.brasileia} </h3>
   <p> Longitude: ${coord.longBrasileia}
   <p> Latitude: ${coord.latBrasileia}
