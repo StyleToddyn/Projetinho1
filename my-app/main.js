@@ -69,17 +69,22 @@ const local5 = new Feature({
 //Locais do Rio Grande do Norte
 const local6 = new Feature({
   geometry: new Point(fromLonLat([-35.2110,-5.7945])),
-  name: `<h3>${location.natal} </h3>
+  name: `
+  <img src=data/Rio_Grande_do_Norte.png width="220">
+  <p>
+  <h3>${location.natal} </h3>
   <p> Longitude: ${coord.longNatal}
   <p> Latitude: ${coord.latNatal}
   <p> Estado: ${state.rioGrandeDoNorte}
-  <p> <a href=${link.natal}> Prefeitura local </a
+  <p> <a href=${link.natal}> Prefeitura local </a>
   <p> População: ${population.natal}
    `
 });
 const local7 = new Feature({
   geometry: new Point(fromLonLat([-37.3480,-5.1894])),
-  name: `<h3>${location.mossoro} </h3>
+  name: `
+  <img src=data/Rio_Grande_do_Norte.png width="220">
+  <h3>${location.mossoro} </h3>
   <p> Longitude: ${coord.longMossoro}
   <p> Latitude: ${coord.latMossoro}
   <p> Estado: ${state.rioGrandeDoNorte}
@@ -88,7 +93,9 @@ const local7 = new Feature({
 });
 const local8 = new Feature({
   geometry: new Point(fromLonLat([-35.0862,-6.2095])),
-  name: `<h3>${location.tibauDoSul} </h3>
+  name: `
+  <img src=data/Rio_Grande_do_Norte.png width="220">
+  <h3>${location.tibauDoSul} </h3>
   <p> Longitude: ${coord.longTibauDoSul}
   <p> Latitude: ${coord.latTibauDoSul}
   <p> Estado: ${state.rioGrandeDoNorte}
@@ -97,7 +104,9 @@ const local8 = new Feature({
 });
 const local9 = new Feature({
   geometry: new Point(fromLonLat([-37.0980,-6.4532])),
-  name: `<h3>${location.caico} </h3>
+  name: `
+  <img src=data/Rio_Grande_do_Norte.png width="220">
+  <h3>${location.caico} </h3>
   <p> Longitude: ${coord.longCaico}
   <p> Latitude: ${coord.latCaico}
   <p> Estado: ${state.rioGrandeDoNorte}
@@ -106,7 +115,9 @@ const local9 = new Feature({
 });
 const local10 = new Feature({
   geometry: new Point(fromLonLat([-36.5173,-6.3884])),
-  name: `<h3>${location.curraisNovos} </h3>
+  name: `
+  <img src=data/Rio_Grande_do_Norte.png width="220">
+  <h3>${location.curraisNovos} </h3>
   <p> Longitude: ${coord.longCurraisNovos}
   <p> Latitude: ${coord.latCurraisNovos}
   <p> Estado: ${state.rioGrandeDoNorte}
@@ -117,7 +128,9 @@ const local10 = new Feature({
 //Locais do Acre
 const local11 = new Feature({
   geometry: new Point(fromLonLat([-67.8249,-9.9754])),
-  name: `<h3>${location.rioBranco} </h3>
+  name: `
+  <img src=data/Bandeira_do_Acre.svg.png width="220">
+  <h3>${location.rioBranco} </h3>
   <p> Longitude: ${coord.longRioBranco}
   <p> Latitude: ${coord.latRioBranco}
   <p> Estado: ${state.acre}
@@ -126,7 +139,9 @@ const local11 = new Feature({
 });
 const local12 = new Feature({
   geometry: new Point(fromLonLat([-73.0165,-7.6339])),
-  name: `<h3>${location.cruzeiroDoSul} </h3>
+  name: `
+  <img src=data/Bandeira_do_Acre.svg.png width="220">
+  <h3>${location.cruzeiroDoSul} </h3>
   <p> Longitude: ${coord.longCruzeiroDoSul}
   <p> Latitude: ${coord.latCruzeiroDoSul}
   <p> Estado: ${state.acre}
@@ -135,7 +150,9 @@ const local12 = new Feature({
 });
 const local13 = new Feature({
   geometry: new Point(fromLonLat([-67.4580,-9.7161])),
-  name: `<h3>${location.senadorGuiomard} </h3>
+  name: `
+  <img src=data/Bandeira_do_Acre.svg.png width="220">
+  <h3>${location.senadorGuiomard} </h3>
   <p> Longitude: ${coord.longSenadorGuiomard}
   <p> Latitude: ${coord.latSenadorGuiomard}
   <p> Estado: ${state.acre}
@@ -144,7 +161,9 @@ const local13 = new Feature({
 });
 const local14 = new Feature({
   geometry: new Point(fromLonLat([-70.5903,-8.1480])),
-  name: `<h3>${location.tarauaca} </h3>
+  name: `
+  <img src=data/Bandeira_do_Acre.svg.png width="220">
+  <h3>${location.tarauaca} </h3>
   <p> Longitude: ${coord.longTarauaca}
   <p> Latitude: ${coord.latTarauaca}
   <p> Estado: ${state.acre}
@@ -153,7 +172,9 @@ const local14 = new Feature({
 });
 const local15 = new Feature({
   geometry: new Point(fromLonLat([-68.7584,-11.0680])),
-  name: `<h3>${location.brasileia} </h3>
+  name: `
+  <img src=data/Bandeira_do_Acre.svg.png width="220">
+  <h3>${location.brasileia} </h3>
   <p> Longitude: ${coord.longBrasileia}
   <p> Latitude: ${coord.latBrasileia}
   <p> Estado: ${state.acre}
