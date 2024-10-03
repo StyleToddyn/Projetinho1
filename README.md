@@ -27,7 +27,7 @@ Você precisará:
     * TO
     * MG
     * AP
-* Brena e Victor - Open Layers https://openlayers.org/
+* Brena e Vitor - Open Layers https://openlayers.org/
     * AL
     * PA
     * RN
